@@ -1,7 +1,10 @@
 html,body{
     /* background-color: rgb(223, 172, 172) !important; */
     
-    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%) !important;
+    /* background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%) !important; */
+    background-image: url(https://i.pinimg.com/originals/5f/ff/2e/5fff2eb81280cb14467728d6bb5957e0.jpg);
+    background-size: cover;
+    background-attachment: fixed;
       
 }
 div.container-lg{
@@ -25,10 +28,10 @@ background-image: linear-gradient(249deg, #88e7e9 0%, #e14ce4 50%, #6fade7 100%)
 
 .btn-grad 
 {
-    background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)
+    background-image: linear-gradient(to right, #35a0e2 10%, #3893bd  41%, #da2dda  100%)
 }
 .btn-grad {
-   margin: auto;
+   margin: auto;/*code for get the center button*/
    padding: 10px 25px;
    text-align: center;
    text-transform: uppercase;
@@ -37,8 +40,8 @@ background-image: linear-gradient(249deg, #88e7e9 0%, #e14ce4 50%, #6fade7 100%)
    color: white;            
    box-shadow: 0 0 20px #eee;
    border-radius: 10px;
-   display: flex;
-   justify-content: center;
+   display: flex;/*code for get the center button*/
+   justify-content: center; /*code for get the center button*/
  }
 
  .btn-grad:hover {
@@ -48,4 +51,7 @@ background-image: linear-gradient(249deg, #88e7e9 0%, #e14ce4 50%, #6fade7 100%)
  }
 /* .ctnbtn{
     align-items: center;
+} */
+/* .imgi{
+    background-image:linear-gradient(rgba(243, 26, 26, 0.5) , rgba(170,70,95,8.5)), url(https://i2.wp.com/theliberacy.com/wp-content/uploads/2020/11/PUBG-Mobile.jpg?fit=3840%2C2160&ssl=1);
 } */
