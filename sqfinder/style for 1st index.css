@@ -7,21 +7,24 @@ html,body{
     background-attachment: fixed;
       
 }
+/* div.container-lg{
+    background-image: linear-gradient( 112.7deg,  rgba(253,185,83,1) 11.4%, rgba(255,138,0,1) 70.2% );   
+    text-align: center;  
+    padding-bottom: 0.%;
+    color: darkmagenta;
 
-nav{
-  background-image: linear-gradient( 135deg, #FF6FD8 10%, #3813C2 100%);
-  color: red;
+} */
+div.container-sm{
+    background-color: #00DBDE;
+background-image: linear-gradient(249deg, #88e7e9 0%, #e14ce4 50%, #6fade7 100%);
 }
-
-b{
-  color: darkseagreen;
-}
-
-div.container-lg{
-  background-color: #0488a6;
-  background-image: linear-gradient(19deg, #0488a6 0%, #B721FF 100%);
-  color: wheat;
-}  
+/* div.container{
+    color: whitesmoke;
+    justify-content: center;
+} */
+/* .col-sm{
+    background-color: black;
+} */
 
 .btn-grad 
 {
@@ -46,3 +49,9 @@ div.container-lg{
    color: #fff;
    text-decoration: none;
  }
+/* .ctnbtn{
+    align-items: center;
+} */
+/* .imgi{
+    background-image:linear-gradient(rgba(243, 26, 26, 0.5) , rgba(170,70,95,8.5)), url(https://i2.wp.com/theliberacy.com/wp-content/uploads/2020/11/PUBG-Mobile.jpg?fit=3840%2C2160&ssl=1);
+} */

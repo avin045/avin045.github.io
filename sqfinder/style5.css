@@ -4,14 +4,11 @@ html {
 }
 
 body {
-    background: url("https://wallpaperaccess.com/full/1482932.jpg") no-repeat center center fixed;
+    background: url("http://trumpwallpapers.com/wp-content/uploads/Pubg-01-3840-x-2160.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: 'Droid Serif', serif;
 }
 
-t{
-    color: white;
-}
 #container-sm {
     background:rgba(112, 0, 110, 0.2);
     width: 18.75rem;
@@ -22,6 +19,9 @@ t{
     left: 0;
     right: 0;
     bottom: 0;
+    box-shadow: -2px 2px 5px 3px rgba(239,215,215,0.44);
+    -webkit-box-shadow: -2px 2px 5px 3px rgba(239,215,215,0.44);
+    -moz-box-shadow: -2px 2px 5px 3px rgba(239,215,215,0.44);
 }
 
 header {
@@ -74,7 +74,7 @@ input[type="password"]:focus {
 
 /*Media queries */
 
-@media all and (min-width: 481px) and (max-width: 568px) {
+/* @media all and (min-width: 481px) and (max-width: 568px) {
     #container {
         margin-top: 10%;
         margin-bottom: 10%;
@@ -85,4 +85,4 @@ input[type="password"]:focus {
             margin-top: 5%;
             margin-bottom: 5%;
         }
-    }
+    } */
