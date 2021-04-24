@@ -1,34 +1,43 @@
-html {
+/* html {
     height: 100%;
     width: 100%;
-}
+} */
+
 
 body {
     background: url("https://wallpaperaccess.com/full/1482932.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: 'Droid Serif', serif;
 }
-
+nav{
+    background-image: linear-gradient( 135deg, #FF6FD8 10%, #3813C2 100%);
+  }
+  
+b{
+    color: darkseagreen;
+  }
+  
 t{
     color: white;
 }
-#container-sm {
+div.container-lg {
     background:rgba(112, 0, 110, 0.2);
-    width: 18.75rem;
+    margin-top: 6%;
+    /* width: 18.75rem;
     height: 25rem;
-    margin: auto;
+    
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
 }
 
-header {
+p{
     text-align: center;
     vertical-align: middle;
-    line-height: 3rem;
-    height: 3rem;
+    /* line-height: 3rem;
+    height: 3rem; */
     background: black;
     font-size: 1.4rem;
     color: #d3d3d3;
@@ -74,7 +83,7 @@ input[type="password"]:focus {
 
 /*Media queries */
 
-@media all and (min-width: 481px) and (max-width: 568px) {
+/* @media all and (min-width: 481px) and (max-width: 568px) {
     #container {
         margin-top: 10%;
         margin-bottom: 10%;
@@ -85,4 +94,4 @@ input[type="password"]:focus {
             margin-top: 5%;
             margin-bottom: 5%;
         }
-    }
+    } */

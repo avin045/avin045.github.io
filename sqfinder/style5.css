@@ -1,36 +1,46 @@
-html {
+/* html {
     height: 100%;
     width: 100%;
-}
+} */
+nav{
+    background-image: linear-gradient( 135deg, #FF6FD8 10%, #3813C2 100%);
+  }
+  
+b{
+    color: darkseagreen;
+  }
+  
 
 body {
-    background: url("https://wallpapercave.com/wp/wp4220085.jpg") no-repeat center center fixed;
+    background-color: black;
+    background:url("https://wallpapercave.com/wp/wp4220085.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: 'Droid Serif', serif;
 }
 
-#container-sm {
-    background:rgba(12, 12, 12, 0.2);
-    width: 18.75rem;
+div.container-sm {
+    margin-top: 6%;
+    background:rgba(226, 186, 9, 0.178);
+    /* width: 18.75rem;
     height: 25rem;
     margin: auto;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
     box-shadow: -2px -1px 47px -3px rgba(0,0,0,0.87);
     -webkit-box-shadow: -2px -1px 47px -3px rgba(0,0,0,0.87);
     -moz-box-shadow: -2px -1px 47px -3px rgba(0,0,0,0.87);
 }
 
-header {
+h3 {
     text-align: center;
     vertical-align: middle;
-    line-height: 3rem;
-    height: 3rem;
+    /* line-height: 3rem;
+    height: 3rem; */
     background: black;
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
     color: #d3d3d3;
 }
 
@@ -76,7 +86,7 @@ input[type="password"]:focus {
 }
 
 /*Media queries */
-
+/* 
 @media all and (min-width: 481px) and (max-width: 568px) {
     #container {
         margin-top: 10%;
@@ -88,4 +98,4 @@ input[type="password"]:focus {
             margin-top: 5%;
             margin-bottom: 5%;
         }
-    }
+    } */

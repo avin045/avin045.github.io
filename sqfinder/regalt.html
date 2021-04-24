@@ -2,39 +2,93 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style3.css">
-   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-   <title>REGISTER</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <title>REGISTER</title>
 </head>
 
 <body>
-   <div id="container-sm">
-      <header>GET IN TO SQUAD FINDER</header>
-      <form method="post">
-         <fieldset>
-            <br />
-            <input type="text" name="username" id="username" placeholder="Username" required autofocus>
-            <br /><br />
-            <input type="email" name="email" id="email" placeholder="E-mail" required>
-            <br /><br />
-            <input type="password" name="password" id="password" placeholder="Password" required>
-            <br /><br />
-            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password"
-               required>
-            <br /> <br /> <br />
-            <label for="submit"></label>
-            <input type="submit" name="submit" id="submit" value="REGISTER">
-         </fieldset>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="./images/sqfimage.png" width="40" height="30" alt="sqfinder" loading="lazy"
+                        class="d-inline-block align-top">
+                    <b>SQUAD FINDER</b>
+                </a>
 
-      </form>
-      <br />
-      <center>
-         <t> Already have a account</t><a href="./login.html" style="text-decoration: none"> -LOG-IN</a>
-      </center>
-   </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar"
+                    aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="myNavBar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a href="./index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./regalt.html" class="nav-link active">Register</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./login.html" class="nav-link">Log-in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./chat.html" class="nav-link disabled">Chat</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Developer support
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item bg-danger"
+                                        href="https://www.instagram.com/avinash_sachin_/">Instagram</a></li>
+                                <li><a class="dropdown-item bg-primary"
+                                        href="https://twitter.com/AVIN_45?s=03">Twitter</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item bg-warning" href="https://github.com/avin045">Github</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="container-lg">
+        <p>GET IN TO SQUAD FINDER</p>
+        <form method="post">
+            <fieldset>
+                <br />
+                <input type="text" name="username" id="username" placeholder="Username" required autofocus>
+                <br /><br />
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <br /><br />
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <br /><br />
+                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password"
+                    required>
+                <br /> <br /> <br />
+                <label for="submit"></label>
+                <input type="submit" name="submit" id="submit" value="REGISTER">
+            </fieldset>
+
+        </form>
+        <br />
+        <center>
+            <t> Already have a account</t>
+            <a href="./login.html" style="text-decoration:none"> - LOG-IN</a>
+        </center>
+        <script src="./assets/js/bootstrap.min.js"></script>
+    </div>
 </body>
 
 </html>
