@@ -125,20 +125,17 @@
                         </button>
                     </form>
 
-                    <!-- center text -->
-
-                    <!-- <div class="text-center mt-3">
+                    <div class="text-center mt-3">
                         <span>Or continue with these social profile</span>
-                    </div> -->
+                    </div>
 
                     <!-- social medias -->
-
-                    <!-- <div class="d-flex justify-content-center mt-4">
-                        <span class="social"><i class="fa fa-google"></i></span>
+                    <div class="d-flex justify-content-center mt-4">
+                        <!-- <span class="social"><i class="fa fa-google"></i></span> -->
                         <a class="social" href="#" style="text-decoration: none;"><i class="fa fa-facebook"></i></a>
                         <a class="social" href="#" style="text-decoration: none;"><i class="fa fa-twitter"></i></a>
-                        <span class="social"><i class="fa fa-linkedin"></i></span>
-                    </div> -->
+                        <!-- <span class="social"><i class="fa fa-linkedin"></i></span> -->
+                    </div>
 
                     <div class="text-center mt-4">
                         <span>Already a member?</span>
@@ -170,26 +167,17 @@
         }
 
         // for validating the password and retype password
-
-        // function matchPassword() {
-        //     let pwd = $("#password").val();
-        //     let confirmpwd = $("#repassword").val();
-        //     if (pwd != confirmpwd) {
-        //         $("#passwordvalid").html("Password cannot Matched");
-        //     }
-        //     else {
-        //         $("#passwordvalid").html("Password Matched");
-        //     }
-
-        // }
-
-        $("#form").submit(function () {
-            if ($("#password").val() != $("#repassword").val()) {
-                // alert("password should be same");
+        function matchPassword() {
+            let pwd = $("#password").val();
+            let confirmpwd = $("#repassword").val();
+            if (pwd != confirmpwd) {
                 $("#passwordvalid").html("Password cannot Matched");
-                return false;
             }
-        })
+            else {
+                $("#passwordvalid").html("Password Matched");
+            }
+
+        }
 
         $(document).ready(() => {
             $("#repassword").keyup(passwordvalid);

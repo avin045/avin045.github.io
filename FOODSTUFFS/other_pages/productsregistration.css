@@ -1,0 +1,8 @@
+div.headerp span {
+  color: lightgreen;
+}
+
+div.headerp span:hover {
+  font-size: 3rem;
+  color: skyblue;
+}
