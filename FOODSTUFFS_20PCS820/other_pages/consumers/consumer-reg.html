@@ -7,50 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- custom css -->
-    <link rel="stylesheet" href="farmers.css" />
+    <link rel="stylesheet" href="./consumer-reg.css" />
 
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../Assets/css/bootstrap.min.css">
     <!-- Assets/css/bootstrap.min.css -->
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/deef53b5f5.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
-    <title>For Farmers - Foodstuff</title>
+    <title>For consumers - Foodstuff</title>
 </head>
 
-<body>
-    <div class="container mt-5 mb-5">
+<body class="bg-dark">
+    <div class="container mt-4 mb-2">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col-md-6">
-                <div class="card px-5 py-5">
-                    <span class="circle"><i class="fa fa-check"></i></span>
-                    <h5 class="mt-3">
-                        Join with Foodstuff Community<br />
+                <div class="card px-4 py-4 bg-dark">
+                    <span class="circle bg-success"><i class="fa fa-check"></i></span>
+                    <h5 class="mt-3 pb-2">
+                        Let's start a day with Foodstuff Community <br />
 
                     </h5>
 
                     <small class="mt-2 text-muted">
-                        Get register with us and produce some quality products to our users.<br>
-                        Definitely you need the 11 Digit of G.M (Government Market's) License ID.
+                        Get register with us to get quality products.
                     </small>
-                    <form id="form" action="./farmerslogin.html" method="GET">
+                    <!-- <form id="form" action="./" method="GET"> -->
+                    <form action="./consumer-log.html" id="form" method="GET">
 
-                        <div class="form-input">
+                        <!-- </form> -->
+
+                        <div class="form-input mb-3">
                             <i class="fas fa-envelope"></i>
                             <!-- email pattern:/^[^ ]+@[^ ]+\.[a-z]{2,3}$/; -->
                             <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                 class="form-control text-light" placeholder="Email address" name="email" required />
                         </div>
 
-                        <div class="form-input">
+                        <div class="form-input mb-3">
                             <i class="fa fa-user"></i>
                             <input type="text" class="form-control text-light" placeholder="User name" name="uname"
                                 required />
                         </div>
 
-                        <div class="form-input">
+                        <div class="form-input mb-3">
                             <i class="fas fa-lock"></i>
                             <input type="password" id="password" minlength="6" maxlength="10"
                                 class="form-control text-light" placeholder="Password" name="pwd" required />
@@ -58,29 +60,29 @@
                         </div>
                         <!-- <i class="fas fa-low-vision"></i> -->
 
-                        <div class="form-input">
+                        <div class="form-input mb-3">
                             <!-- <i class="fas fa-lock"></i> -->
                             <i class="fas fa-keyboard"></i>
                             <input type="password" id="repassword" minlength="6" maxlength="10"
                                 class="form-control text-light" placeholder="Confirm password" name="pwdconf"
-                                required />
+                                onkeyup="matchPassword()" required />
 
-
+                            <!-- password checker -->
 
                             <div>
                                 <span class="passwordvalid" style="color: lightgreen;" id="passwordvalid"></span>
                             </div>
-
-
                         </div>
-                        <div class="form-input">
+                        <!-- <div class="form-input">
                             <i class="fas fa-id-badge"></i>
                             <input type="text" class="form-control text-light" minlength="11" maxlength="11"
                                 placeholder="G.M License ID" name="gmli" required />
-                        </div>
+                        </div> -->
                         <!-- <input type="file" id="myFile" name="filename"> -->
 
-                        <div class="form-check">
+
+
+                        <div class="form-check mb-3">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked
                                 required />
                             <label class="form-check-label" for="flexCheckChecked">
@@ -89,8 +91,6 @@
                                     Conditions </a>
                             </label>
                         </div>
-
-
 
 
                         <!-- Modal -->
@@ -115,34 +115,31 @@
                         </div>
 
 
-
-
-
                         <!-- button for form -->
-                        <button type="submit" class="btn btn-success mt-4 signup"
-                            style="display: inline-block; width: 100%;" onclick="matchPassword();">
-                            Register now
-                        </button>
+                        <div class="text-center">
+                            <!-- style="display: inline-block; width: 100%;" -->
+                            <button type="submit" class="btn btn-success mt-2 signup shadow-none">
+
+                                Register now
+                            </button>
+                        </div>
                     </form>
 
-                    <!-- center text -->
-
-                    <!-- <div class="text-center mt-3">
-                        <span>Or continue with these social profile</span>
-                    </div> -->
+                    <div class="text-center mt-3">
+                        <span>Or</span>
+                    </div>
 
                     <!-- social medias -->
-
-                    <!-- <div class="d-flex justify-content-center mt-4">
-                        <span class="social"><i class="fa fa-google"></i></span>
+                    <div class="d-flex justify-content-center mt-3">
+                        <!-- <span class="social"><i class="fa fa-google"></i></span> -->
                         <a class="social" href="#" style="text-decoration: none;"><i class="fa fa-facebook"></i></a>
                         <a class="social" href="#" style="text-decoration: none;"><i class="fa fa-twitter"></i></a>
-                        <span class="social"><i class="fa fa-linkedin"></i></span>
-                    </div> -->
+                        <!-- <span class="social"><i class="fa fa-linkedin"></i></span> -->
+                    </div>
 
                     <div class="text-center mt-4">
-                        <span>Already a member?</span>
-                        <a href="./farmerslogin.html" class="text-decoration-none">Sign In</a>
+                        <span>If you already an member?</span>
+                        <a href="./consumer-log.html" class="text-decoration-none" style="color: goldenrod;">Sign In</a>
                     </div>
                 </div>
             </div>
@@ -150,10 +147,11 @@
     </div>
 
     <!-- jquery -->
-    <script src="../Assets/Jquery/jquery-3.6.0.min.js"></script>
+    <script src="../../Assets/Jquery/jquery-3.6.0.min.js"></script>
+
 
     <!-- bootstrap  -->
-    <script src="../Assets/js/bootstrap.min.js"></script>
+    <script src="../../Assets/js/bootstrap.min.js"></script>
 
     <script>
         // for hide and unhide the passwords
@@ -169,20 +167,6 @@
             }
         }
 
-        // for validating the password and retype password
-
-        // function matchPassword() {
-        //     let pwd = $("#password").val();
-        //     let confirmpwd = $("#repassword").val();
-        //     if (pwd != confirmpwd) {
-        //         $("#passwordvalid").html("Password cannot Matched");
-        //     }
-        //     else {
-        //         $("#passwordvalid").html("Password Matched");
-        //     }
-
-        // }
-
         $("#form").submit(function () {
             if ($("#password").val() != $("#repassword").val()) {
                 // alert("password should be same");
@@ -191,7 +175,7 @@
             }
         })
 
-        $(document).ready(() => {
+        $(document).ready(function () {
             $("#repassword").keyup(passwordvalid);
         });
     </script>
