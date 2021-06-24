@@ -50,6 +50,8 @@ div.logtit > span:hover {
 input[type="password"] {
   /* background-color: transparent !important; */
   border: none;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
   /* border-color: transparent; */
   /* outline: none; */
 }
@@ -69,10 +71,40 @@ div.modal-content .modal-header {
   padding-bottom: 2px;
 }
 
+.eye {
+  position: absolute;
+  font-size: 18px;
+  bottom: 5px;
+  right: 10px;
+  background-color: transparent;
+  border: unset;
+  color: thistle;
+  position: static;
+}
+
 /* form control */
-.form-control {
+/* .form-control {
   background-color: #25272a !important;
   box-shadow: none;
   color: #fff;
+  border-color: #4f63e7;
+} */
+
+/* form control */
+.form-control {
+  background-color: transparent !important;
+  box-shadow: none;
+  color: #fff;
   /* border-color: #4f63e7; */
+}
+.form-input {
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  box-shadow: none;
+  color: #fff;
 }

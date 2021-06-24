@@ -25,7 +25,7 @@
 <body class="bg-dark">
 
     <div class="text-light text-center headerp">
-        <h1 class="pt-4 text-uppercase">
+        <h1 class="pt-2 text-uppercase">
             <span class="fas fa-leaf p-3">
 
             </span> <br>
@@ -41,29 +41,63 @@
                 <div class="card bg-dark">
 
 
-                    <form action="./showprod.html" method="GET" class="bg-dark text-light p-5">
-                        <div class="mb-4">
+                    <form action="./viewprod.html" method="GET" class="bg-dark text-light p-5">
+                        <div class="mb-3">
                             <label class="form-label">PRODUCT NAME</label>
-                            <input type="text" class="form-control" name="mname" required>
+                            <input type="text" class="form-control" name="pname" required>
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-3">
                             <label class="form-label">PRODUCT DESCRIPTION</label>
                             <textarea class="form-control" name="descri"></textarea>
                         </div>
 
-                        <div class="mb-4">
+
+                        <div class="mb-3">
+                            <label class="form-label">PRODUCT CATEGORY</label> <br>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="type" id="type" value="Vegetable"
+                                    required>
+                                <label class="form-check-label" for="type">Vegetable</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="type" id="type2" value="Fruit"
+                                    required>
+                                <label class="form-check-label" for="type2">Fruit</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
                             <label class="form-label">PRODUCT IMAGE</label><br>
                             <input type="file" name="image"> <br>
                             <small class="text-muted">*Uploading image will shows quality to customers.</small>
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-3">
                             <label class="form-label">PRODUCT PRICE</label>
                             <input type="number" step=".01" class="form-control" name="price" required>
                         </div>
 
-                        <div class="text-center">
+                        <div class="mb-3">
+                            <label class="form-label">ADDRESS</label>
+                            <textarea class="form-control" name="address"
+                                placeholder="specify only one line of your address" required></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">LOCATION</label>
+                            <input type="text" class="form-control" name="locate" placeholder="Ex: Amoor,Musiri T.K"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="phone">PHONE NUMBER</label> <br>
+                            <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{5}-[0-9]{5}"
+                                placeholder="63694-99789" required>
+                        </div>
+
+                        <div class="text-center pt-1">
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </form>

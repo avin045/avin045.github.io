@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../../Assets/css/bootstrap.min.css">
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="viewprodc.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/deef53b5f5.js" crossorigin="anonymous"></script>
+
+    <title>view product card - Foodstuff</title>
+
+
+
+
+    <style>
+        /* Navbar */
+
+        .brandicon {
+            color: chartreuse;
+        }
+
+        div i {
+            padding-right: 4px;
+        }
+
+        .brandicon:hover {
+            color: red;
+        }
+
+        #brand:hover {
+            font-size: 1.4rem;
+        }
+
+        @media only screen and (min-width: 1240px) {
+            .nedpad {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+        }
+
+        .dropdown-menu li a {
+            /* background-color: darkkhaki; */
+            color: silver;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: cornsilk;
+            color: black;
+        }
+
+        .btnsquare {
+            border-radius: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand ms-2 fw-bold" id="brand"><i
+                        class="fas fa-leaf fa-lg fa-rotate-190 brandicon"></i>
+                    FOODSTUFF</a>
+
+                <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nedpad" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu bg-dark drop" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item  btn btnsquare"
+                                        href="../consumers/viewp_c_veg.html">Vegetables</a></li>
+                                <li><a class="dropdown-item" href="../consumers/viewp_c_frt.html">Fruits</a>
+                                </li>
+                                <!-- <li><a class="dropdown-item bg-primary text-light" href="#">Privacy Polices</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nedpad" aria-current="page" href="./map/map.html">Map service</a>
+                        </li>
+                        <li class="nav-item nedpad">
+                            <a class="nav-link" href="#">Check out &nbsp;<i class="fas fa-shopping-cart"></i>
+                                <span class="badge bg-warning text-dark" id="cart-inc-id">1</span></a>
+                        </li>
+                        <!-- <li class="nav-item nedpad">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <br>
+
+    <div class="text-center text-dark mt-5 heading">
+        <p class="h1">Fruits Array</p>
+    </div>
+
+    <section class="p-5" id="cards">
+        <div class="container p-2 text-center">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-sm-2 row-cols-lg-4">
+                <div class="col mb-4">
+                    <div class="card bg-dark text-light">
+                        <img src="../../Assets/images_for_cart/card1.jpg" class="card-img-top" alt="..." height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruits Demo</h5>
+                            <p class="card-text">Fruits are good for health.</p>
+                            <p class="card-text"> Price: &#8377; 999/- </p>
+                            <p class="card-text"> Location: Amoor </p>
+                            <!-- <div class="card-footer"> -->
+                            <a href="#" class="btn btn-primary shadow-none"><i class="fas fa-cart-plus"></i> Add to
+                                cart</a>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------------------------------------------------- -->
+                <div class="col mb-4">
+                    <div class="card bg-dark text-light">
+                        <img src="../../Assets/images_for_cart/card1.jpg" class="card-img-top" alt="..." height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruits Demo</h5>
+                            <p class="card-text">Fruits are good for health.</p>
+                            <p> Price: &#8377; 99/- </p>
+                            <p class="card-text"> Location: America </p>
+                            <a href="#" class="btn btn-primary shadow-none"><i class="fas fa-cart-plus"></i> Add to
+                                cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------------------------------- -->
+                <div class="col mb-4">
+                    <div class="card bg-dark text-light">
+                        <img src="../../Assets/images_for_cart/card1.jpg" class="card-img-top" alt="..." height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruits Demo</h5>
+                            <p class="card-text">Fruits are good for health.</p>
+                            <p> Price: &#8377; 99/- </p>
+                            <p class="card-text"> Location: Iran </p>
+                            <a href="#" class="btn btn-primary shadow-none"><i class="fas fa-cart-plus"></i> Add to
+                                cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------------------------------------------------------- -->
+                <div class="col mb-4">
+                    <div class="card bg-dark text-light">
+                        <img src="../../Assets/images_for_cart/card1.jpg" class="card-img-top" alt="..." height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruits Demo</h5>
+                            <p class="card-text">Fruits are good for health.</p>
+                            <p> Price: &#8377; 99/- </p>
+                            <p class="card-text"> Location: Aminjikarai </p>
+                            <a href="#" class="btn btn-primary shadow-none"><i class="fas fa-cart-plus"></i> Add to
+                                cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-sm-2 row-cols-lg-4">
+                <div class="col mb-4">
+                    <div class="card bg-dark text-light">
+                        <img src="../../Assets/images_for_cart/card1.jpg" class="card-img-top" alt="..." height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruits Demo</h5>
+                            <p class="card-text">Fruits are good for health.</p>
+                            <a href="#" class="btn btn-primary shadow-none"><i class="fas fa-cart-plus"></i> Add to
+                                cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------------------------------------------------- -->
+                <div class="col mb-4">
+                    <div class="card bg-dark text-light">
+                        <img src="../../Assets/images_for_cart/card1.jpg" class="card-img-top" alt="..." height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruits Demo</h5>
+                            <p class="card-text">Fruits are good for health.</p>
+                            <a href="#" class="btn btn-primary shadow-none"><i class="fas fa-cart-plus"></i> Add to
+                                cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------------------------------- -->
+                <div class="col mb-4">
+                    <div class="card bg-dark text-light">
+                        <img src="../../Assets/images_for_cart/card1.jpg" class="card-img-top" alt="..." height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruits Demo</h5>
+                            <p class="card-text">Fruits are good for health.</p>
+                            <a href="#" class="btn btn-primary shadow-none"><i class="fas fa-cart-plus"></i> Add to
+                                cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------------------------------------------------------- -->
+                <div class="col mb-4">
+                    <div class="card bg-dark text-light">
+                        <img src="../../Assets/images_for_cart/card1.jpg" class="card-img-top" alt="..." height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Fruits Demo</h5>
+                            <p class="card-text">Fruits are good for health.</p>
+                            <a href="#" class="btn btn-primary shadow-none"><i class="fas fa-cart-plus"></i> Add to
+                                cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- jquery -->
+    <script src="../../Assets/Jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- popper -->
+    <!-- <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script> -->
+
+    <!-- bootstrap -->
+    <script src="../../Assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

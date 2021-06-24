@@ -56,7 +56,7 @@
                             <i class="fas fa-lock"></i>
                             <input type="password" id="password" minlength="6" maxlength="10"
                                 class="form-control text-light" placeholder="Password" name="pwd" required />
-                            <button class="fas fa-low-vision" id="pwd" type="button" onclick="toggle(this);"></button>
+                            <button class="fas fa-eye eye" id="pwd" type="button" onclick="toggle(this);"></button>
                         </div>
                         <!-- <i class="fas fa-low-vision"></i> -->
 
@@ -153,17 +153,26 @@
     <!-- bootstrap  -->
     <script src="../../Assets/js/bootstrap.min.js"></script>
 
+
+
     <script>
         // for hide and unhide the passwords
         function toggle(button) {
             var pass = document.getElementById("password");
+
+
             if (pass.type == "password") {
-                button.innerHTML = "";
+
                 pass.type = "text";
+                $(".eye").removeClass("fas fa-eye");
+                $(".eye").toggleClass("fas fa-eye-slash");
             }
             else {
-                button.innerHTML = "";
+
                 pass.type = "password";
+                $(".eye").removeClass("fas fa-eye-slash");
+                $(".eye").toggleClass("fas fa-eye");
+
             }
         }
 
@@ -173,9 +182,15 @@
                 $("#passwordvalid").html("Password cannot Matched");
                 return false;
             }
+
+            if ($("#password").val() == "") {
+                // alert("password should be same");
+                $("#passwordvalid").html("Password is must");
+                return false;
+            }
         })
 
-        $(document).ready(function () {
+        $(document).ready(() => {
             $("#repassword").keyup(passwordvalid);
         });
     </script>

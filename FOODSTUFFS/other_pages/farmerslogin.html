@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- custom css -->
-    <link rel="stylesheet" href="farmerslogin.css">
+    <link rel="stylesheet" href="farmerslogin.css" />
 
     <!-- bootstrap css -->
     <link rel="stylesheet" href="../Assets/css/bootstrap.min.css" />
@@ -15,7 +15,6 @@
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/deef53b5f5.js" crossorigin="anonymous"></script>
-
 
     <title>Farmer's Login - Foodstuff</title>
 </head>
@@ -26,13 +25,8 @@
             <div class="col-md-6 m-auto mt-5 mb-5">
                 <div class="card bg-dark">
                     <div class="card-title text-center pt-5 logtit">
-
-                        <span class="fas fa-leaf fa-3x">
-
-                        </span><br><br>
-                        <p class="title text-secondary">
-                            Foodstuff Farmer's Login
-                        </p>
+                        <span class="fas fa-leaf fa-3x"> </span><br /><br />
+                        <p class="title text-secondary">Foodstuff Farmer's Login</p>
                     </div>
                     <div class="card-body">
                         <form action="./productsregistration.html" method="GET" id="loginform">
@@ -42,7 +36,7 @@
                                     <i class="fas fa-user fa-lg input-group-text" id="basic-addon1"></i>
                                 </div>
                                 <input type="text" class="form-control py-0 bg-dark text-light shadow-none"
-                                    placeholder="Username" minlength="4" name="usname" required>
+                                    placeholder="Username" minlength="4" name="usname" required />
                             </div>
 
                             <div class="input-group mb-3 mt-3 box2">
@@ -51,19 +45,25 @@
                                     <i class="fas fa-key fa-lg input-group-text" id="basic-addon2"></i>
                                     <!-- <i class="fas fa-key"></i> -->
                                 </div>
-                                <input type="password" class="form-control py-0 bg-dark text-light shadow-none"
-                                    placeholder="Passcode" minlength="6" maxlength="10" name="uspwd" required>
+                                <input type="password" id="password"
+                                    class="form-control py-2 bg-dark text-light shadow-none" placeholder="Password"
+                                    minlength="6" maxlength="10" name="uspwd" />
+
+                                <button class="fas fa-eye eye" id="pwd" type="button" onclick="toggle(this);"></button>
                             </div>
 
-
+                            <div class="mx-2">
+                                <span class="passwordvalid" style="color:red;" id="passwordvalid"></span>
+                            </div>
 
                             <div class="form-check mt-4">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked
                                     required />
                                 <label class="form-check-label text-light" for="flexCheckChecked">
-                                    Accept the <a href="#" type="button" class="text-decoration-none"
-                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Terms and
-                                        Conditions </a>
+                                    Accept the
+                                    <a href="#" type="button" class="text-decoration-none" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">Terms and Conditions
+                                    </a>
                                 </label>
                             </div>
 
@@ -74,14 +74,17 @@
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content bg-dark">
                                         <div class="modal-header text-light">
-                                            <h5 class="modal-title" id="exampleModalLabel">Terms and Conditions</h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">
+                                                Terms and Conditions
+                                            </h5>
                                             <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body text-light mb-2">
-                                            Our terms is very simple, <br>
-                                            it's only about what the permissions you gave to access our site and what
-                                            the details you provided here to sale your products. <br><br>
+                                            Our terms is very simple, <br />
+                                            it's only about what the permissions you gave to access
+                                            our site and what the details you provided here to sale
+                                            your products. <br /><br />
                                             That's it.
                                         </div>
                                         <!-- <div class="modal-footer">
@@ -97,15 +100,16 @@
 
                             <!--make the button to center we can add the class to certain div and we wrap within-->
 
-
                             <div class="text-center">
-                                <button type="submit" class="btn btn-success mt-4 signup" style="align-content:center;">
+                                <button type="submit" class="btn btn-success mt-4 signup" style="align-content: center">
                                     Register now
                                 </button>
                             </div>
 
-                            <p class="text-center text-light mt-3">Don't have a account - <a href="./farmers.html"
-                                    class="text-decoration-none">Sign Up</a></p>
+                            <p class="text-center text-light mt-3">
+                                Don't have a account -
+                                <a href="./farmers.html" class="text-decoration-none">Sign Up</a>
+                            </p>
                         </form>
                     </div>
                 </div>
@@ -113,14 +117,40 @@
         </div>
     </div>
 
-
-
     <!-- jquery -->
     <script src="../Assets/Jquery/jquery-3.6.0.min.js"></script>
 
     <!-- bootstrap  -->
     <script src="../Assets/js/bootstrap.min.js"></script>
 
+    <script>
+        // for hide and unhide the passwords
+        function toggle(button) {
+            var pass = document.getElementById("password");
+
+            if (pass.type == "password") {
+                pass.type = "text";
+                $(".eye").removeClass("fas fa-eye");
+                $(".eye").toggleClass("fas fa-eye-slash");
+            } else {
+                pass.type = "password";
+                $(".eye").removeClass("fas fa-eye-slash");
+                $(".eye").toggleClass("fas fa-eye");
+            }
+        }
+
+        $("#loginform").submit(function () {
+            if ($("#password").val() == "") {
+                // alert("password should be same");
+                $("#passwordvalid").html("*Password is mandatory");
+                return false;
+            }
+        })
+
+        $(document).ready(() => {
+            $("#password").keyup(passwordvalid);
+        });
+    </script>
 </body>
 
 </html>

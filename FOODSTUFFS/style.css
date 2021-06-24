@@ -340,7 +340,8 @@ li.align {
   right: 20px;
   height: 50px;
   width: 50px;
-  display: none;
+  /* display: none; */
+  /* display: ; */
   border-radius: 50%;
 }
 

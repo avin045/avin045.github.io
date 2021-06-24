@@ -33,7 +33,9 @@
 
                     <small class="mt-2 text-muted">
                         Get register with us and produce some quality products to our users.<br>
-                        Definitely you need the 11 Digit of G.M (Government Market's) License ID.
+                        <div class="text-light">
+                            *Definitely you need the 11 Digit of G.M (Government Market's) License ID.
+                        </div>
                     </small>
                     <form id="form" action="./farmerslogin.html" method="GET">
 
@@ -50,20 +52,27 @@
                                 required />
                         </div>
 
+                        <!-- password -->
+
+
                         <div class="form-input">
                             <i class="fas fa-lock"></i>
                             <input type="password" id="password" minlength="6" maxlength="10"
                                 class="form-control text-light" placeholder="Password" name="pwd" required />
-                            <button class="fas fa-low-vision" id="pwd" type="button" onclick="toggle(this);"></button>
+                            <button class="fas fa-eye eye" id="pwd" type="button" onclick="toggle(this);"></button>
                         </div>
                         <!-- <i class="fas fa-low-vision"></i> -->
+
+
+                        <!-- retype password -->
+
 
                         <div class="form-input">
                             <!-- <i class="fas fa-lock"></i> -->
                             <i class="fas fa-keyboard"></i>
                             <input type="password" id="repassword" minlength="6" maxlength="10"
                                 class="form-control text-light" placeholder="Confirm password" name="pwdconf"
-                                required />
+                                onkeyup="matchPassword();" required />
 
 
 
@@ -91,8 +100,6 @@
                         </div>
 
 
-
-
                         <!-- Modal -->
                         <div class="modal fade" id="staticBackdrop" tabindex="-1" data-bs-backdrop="static"
                             data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
@@ -116,11 +123,9 @@
 
 
 
-
-
                         <!-- button for form -->
                         <button type="submit" class="btn btn-success mt-4 signup"
-                            style="display: inline-block; width: 100%;" onclick="matchPassword();">
+                            style="display: inline-block; width: 100%;">
                             Register now
                         </button>
                     </form>
@@ -159,13 +164,22 @@
         // for hide and unhide the passwords
         function toggle(button) {
             var pass = document.getElementById("password");
+
+            // $(".eye").removeClass("fas fa-eye");
+            // $(".eye").addClass("fas fa-eye-slash");
+            // $("button").toggleClass("fas fa-eye-slash");
             if (pass.type == "password") {
-                button.innerHTML = "";
+                // button.innerHTML = "";
                 pass.type = "text";
+                $(".eye").removeClass("fas fa-eye");
+                $(".eye").toggleClass("fas fa-eye-slash");
             }
             else {
-                button.innerHTML = "";
+                // button.innerHTML = "";
                 pass.type = "password";
+                $(".eye").removeClass("fas fa-eye-slash");
+                $(".eye").toggleClass("fas fa-eye");
+
             }
         }
 
@@ -187,6 +201,12 @@
             if ($("#password").val() != $("#repassword").val()) {
                 // alert("password should be same");
                 $("#passwordvalid").html("Password cannot Matched");
+                return false;
+            }
+
+            if ($("#password").val() == "") {
+                // alert("password should be same");
+                $("#passwordvalid").html("Password is must");
                 return false;
             }
         })

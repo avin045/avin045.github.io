@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="../../Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/deef53b5f5.js" crossorigin="anonymous"></script>
 
     <!-- datatables -->
-    <link rel="stylesheet" href="../../node_modules/datatables.net-dt/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../node_modules/datatables.net-dt/css/jquery.dataTables.min.css">
 
     <!-- responsive -->
-    <link rel="stylesheet" href="../../node_modules/datatables.net-responsive-dt/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="../node_modules/datatables.net-responsive-dt/css/responsive.dataTables.min.css">
 
 
     <title>View Products - Foodstuff</title>
@@ -53,13 +53,15 @@
 
     <!-- header -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
+        <div class="container">
             <a href="#" class="navbar-brand ms-2 fw-bold" id="brand"><i
                     class="fas fa-leaf fa-lg fa-rotate-190 brandicon"></i>
                 FOODSTUFF</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
@@ -80,7 +82,7 @@
 
 
     <div class="container p-3 mt-5">
-        <h1 class="text-center pt-2 pb-2">Products</h1>
+        <h1 class="text-center pt-2 pb-2 text-dark">Products</h1>
         <div class="row py-3">
             <div class="col-lg-12">
                 <table id="example" class="table bg-warning text-dark table-hover table-responsive nowrap"
@@ -89,8 +91,10 @@
                         <tr class="text-center">
                             <th>Image</th>
                             <th>Name</th>
+                            <th>Address</th>
                             <th>Location</th>
                             <th>Price</th>
+                            <th>Action</th>
                             <!-- <th>Start date</th> -->
                             <!-- <th>Salary</th> -->
                         </tr>
@@ -98,42 +102,84 @@
                     <tbody class="table align-middle table-dark table-hover text-center">
                         <tr>
                             <td>
-                                <img class="img-responsive" src="../../Assets/images_for_fe/tomotoo.png" alt="img"
+                                <img class="img-responsive" src="../Assets/images_for_fe/tomotoo.png" alt="img"
                                     style="width:100px;">
                             </td>
                             <td>Tomato</td>
+                            <td>
+                                No: 500 , adangamaru road, <br>
+                                Manachannallur
+                            </td>
                             <td>Amoor</td>
                             <td>61</td>
+                            <td>
+                                <form action="">
+                                    <a href="" class="btn btn-sm btn-primary">Edit</a>
+                                    <a href="" class="btn btn-sm btn-danger">Delete</a>
+                                </form>
+                            </td>
                             <!-- <td>2011/04/25</td>
                             <td>$320,800</td> -->
                         </tr>
                         <tr>
                             <td>
-                                <img src="../../Assets/images_for_fe/tomotoo.png" alt="img" style="width:100px;">
+                                <img src="../Assets/images_for_fe/tomotoo.png" alt="img" style="width:100px;">
                             </td>
                             <td>Accountant</td>
+                            <td>
+                                No: 500 , adangamaru road, <br>
+                                Manachannallur
+                            </td>
                             <td>Tokyo</td>
                             <td>63</td>
+                            <td>
+                                <form action="">
+                                    <a href="" class="btn btn-sm btn-primary">Edit</a>
+                                    <a href="" class="btn btn-sm btn-danger">Delete</a>
+                                </form>
+                            </td>
                             <!-- <td>2011/07/25</td>
                             <td>$170,750</td> -->
                         </tr>
                         <tr>
                             <td>
-                                <img src="../../Assets/images_for_fe/tomotoo.png" alt="img" style="width:100px;">
+                                <img src="../Assets/images_for_fe/tomotoo.png" alt="img" style="width:100px;">
                             </td>
                             <td>Junior Technical Author</td>
+                            <td>
+                                No: 500 , adangamaru road, <br>
+                                Manachannallur
+                            </td>
                             <td>San Francisco</td>
                             <td>66</td>
+                            <td>
+                                <form action="">
+                                    <a href="" class="btn btn-sm btn-primary">Edit</a>
+                                    <a href="" class="btn btn-sm btn-danger">Delete</a>
+                                </form>
+                            </td>
                             <!-- <td>2009/01/12</td>
                             <td>$86,000</td> -->
                         </tr>
                         <tr>
                             <td>
-                                <img src="../../Assets/images_for_fe/tomotoo.png" alt="img" style="width:100px;">
+                                <img src="../Assets/images_for_fe/tomotoo.png" alt="img" style="width:100px;">
                             </td>
                             <td>Javascript Developer</td>
+                            <td>
+                                No: 500 , adangamaru road, <br>
+                                Manachannallur
+                            </td>
                             <td>San Francisco</td>
                             <td>39</td>
+                            <td>
+                                <form action="">
+                                    <div class="text-center">
+                                        <a href="" class="btn btn-sm btn-primary">Edit</a>
+                                        <a href="" class="btn btn-sm btn-danger">Delete</a>
+                                    </div>
+                                </form>
+                            </td>
                             <!-- <td>2009/09/15</td>
                             <td>$205,500</td> -->
                         </tr>
@@ -153,23 +199,23 @@
 
 
     <!-- jquery -->
-    <script src="../../Assets/Jquery/jquery-3.6.0.min.js"></script>
+    <script src="../Assets/Jquery/jquery-3.6.0.min.js"></script>
 
     <!-- popper -->
     <!-- <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script> -->
 
     <!-- bootstrap -->
-    <script src="../../Assets/js/bootstrap.min.js"></script>
+    <script src="../Assets/js/bootstrap.min.js"></script>
 
     <!-- datatables -->
     <script type="text/javascript" language="javascript"
-        src="../../node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+        src="../node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
 
 
 
     <!-- responsive -->
     <script type="text/javascript" language="javascript"
-        src="../../node_modules/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+        src="../node_modules/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
 
 
     <script>

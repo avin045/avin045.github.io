@@ -1,13 +1,10 @@
 /* Change autocomplete styles in WebKit */
 input[type="text"]:-webkit-autofill,
 input[type="text"]:-webkit-autofill:hover,
-input[type="text"]:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
+select:-webkit-autofill:hover {
   /* border-radius: 0px; */
   -webkit-text-fill-color: rgb(241, 235, 235);
   box-shadow: 0 0 500px 1000px #25272a inset !important;
@@ -50,6 +47,8 @@ div.logtit > span:hover {
 input[type="password"] {
   /* background-color: transparent !important; */
   border: none;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
   /* border-color: transparent; */
   /* outline: none; */
 }
@@ -69,10 +68,34 @@ div.modal-content .modal-header {
   padding-bottom: 2px;
 }
 
+/* password visibility */
+
+.eye {
+  position: absolute;
+  font-size: 18px;
+  bottom: 5px;
+  right: 10px;
+  background-color: transparent;
+  border: unset;
+  color: thistle;
+  position: static;
+}
+
 /* form control */
 .form-control {
-  background-color: #25272a !important;
+  background-color: transparent !important;
   box-shadow: none;
   color: #fff;
   /* border-color: #4f63e7; */
+}
+.form-input {
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  box-shadow: none;
+  color: #fff;
 }

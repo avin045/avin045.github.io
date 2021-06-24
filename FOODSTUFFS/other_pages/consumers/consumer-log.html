@@ -24,7 +24,7 @@
     <div class="container">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col-md-6">
-                <div class="card bg-dark px-5 py-5">
+                <div class="card bg-dark px-3 py-3">
                     <div class="card-title text-center pt-5 logtit">
 
                         <span class="fas fa-leaf fa-3x">
@@ -35,7 +35,7 @@
                         </p>
                     </div>
                     <div class="card-body">
-                        <form action="./viewc.html" method="GET" id="loginform">
+                        <form action="./viewp_c_veg.html" method="GET" id="loginform">
                             <div class="input-group mb-3 box1">
                                 <div class="input-group-prepend">
                                     <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
@@ -51,19 +51,25 @@
                                     <i class="fas fa-key fa-lg input-group-text" id="basic-addon2"></i>
                                     <!-- <i class="fas fa-key"></i> -->
                                 </div>
-                                <input type="password" class="form-control py-0 bg-dark text-light shadow-none"
-                                    placeholder="Passcode" minlength="6" maxlength="10" name="uspwd" required>
+                                <input type="password" id="password"
+                                    class="form-control py-0 bg-dark text-light shadow-none" placeholder="Password"
+                                    minlength="6" maxlength="10" name="uspwd" />
+                                <button class="fas fa-eye eye" id="pwd" type="button" onclick="toggle(this);"></button>
                             </div>
 
 
+                            <div class="mx-2">
+                                <span class="passwordvalid" style="color:red;" id="passwordvalid"></span>
+                            </div>
 
-                            <div class="form-check mt-4">
+
+                            <div class="form-check mt-3">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked
                                     required />
                                 <label class="form-check-label text-light" for="flexCheckChecked">
                                     Accept the <a href="#" type="button" class="text-decoration-none"
-                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Terms and
-                                        Conditions </a>
+                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">T &
+                                        C </a>
                                 </label>
                             </div>
 
@@ -99,7 +105,8 @@
 
 
                             <div class="text-center">
-                                <button type="submit" class="btn btn-success mt-4 signup" style="align-content:center;">
+                                <button type="submit" class="btn btn-success mt-4 signup shadow-none"
+                                    style="align-content:center;">
                                     Register now
                                 </button>
                             </div>
@@ -120,6 +127,35 @@
 
     <!-- bootstrap  -->
     <script src="../../Assets/js/bootstrap.min.js"></script>
+
+    <script>
+        // for hide and unhide the passwords
+        function toggle(button) {
+            var pass = document.getElementById("password");
+
+            if (pass.type == "password") {
+                pass.type = "text";
+                $(".eye").removeClass("fas fa-eye");
+                $(".eye").toggleClass("fas fa-eye-slash");
+            } else {
+                pass.type = "password";
+                $(".eye").removeClass("fas fa-eye-slash");
+                $(".eye").toggleClass("fas fa-eye");
+            }
+        }
+
+        $("#loginform").submit(function () {
+            if ($("#password").val() == "") {
+                // alert("password should be same");
+                $("#passwordvalid").html("*Password is mandatory");
+                return false;
+            }
+        })
+
+        $(document).ready(() => {
+            $("#password").keyup(passwordvalid);
+        });
+    </script>
 
 </body>
 

@@ -6,3 +6,14 @@ div.headerp span:hover {
   font-size: 3rem;
   color: skyblue;
 }
+
+input[type="radio"]:checked {
+  /* color: green; */
+  background-color: green;
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+/* input[type="file"] {
+} */
