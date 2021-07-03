@@ -1,0 +1,14 @@
+body {
+  /* background: url(https://www.crushpixel.com/big-static18/preview4/winking-face-neon-icon-simple-2854770.jpg); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url(https://www.crushpixel.com/big-static18/preview4/winking-face-neon-icon-simple-2854770.jpg);
+  /* content: ""; */
+  /* background-repeat: no-repeat; */
+  /* position:sticky !important; */
+  background-size: contain;
+  background-position: center;
+}
+
+.card{
+    border: none;
+    border-radius: 0%;
+}
