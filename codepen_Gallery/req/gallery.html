@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <script>
+        var namecom = localStorage.getItem("Username");
+
+        function validation() {
+            if (namecom === 'dogie_sm') {
+                document.getElementById("showname").innerHTML = "Hey Dogie ,😜";
+                localStorage.removeItem("Username");
+            }
+            else if (namecom === 'Legend_u_js') {
+                document.getElementById("showname").innerHTML = "Vanakam Legend uu 😂";
+                localStorage.removeItem("Username");
+            }
+            else if (namecom === 'avinn') {
+                document.getElementById("showname").innerHTML = "Hey Avin😉 Welcome Buddy!!!!";
+                localStorage.removeItem("Username");
+            }
+            else {
+                // window.location.replace("https://www.giantfreakinrobot.com/wp-content/uploads/2021/05/tony-stark-robert-downey-jr-1200x675.jpg");
+                window.location.replace("https://wallpaper.dog/large/20494138.jpg");
+            }
+        }
+
+    </script>
+</head>
+
+<body class="bg-dark text-light" onload="validation();">
+    <p class="text-light h1 text-center pt-3">Welcome to Our Gallery</p>
+    <hr>
+    <p class="text-light text-center display-5 name text-captialize p-1" id="showname"></p>
+    <hr>
+    <div id="gallery" class="container-fluid">
+
+        <img src="https://drive.google.com/uc?id=12yc1EvJEBQRFysiPKpeRiPhssRPCTSvV" class="img-responsive">
+        <img src="https://drive.google.com/uc?id=1i_msWsXI-LGbYo1oy0RDFrD_63_k1Pxz" class="img-responsive">
+        <img src="https://drive.google.com/uc?id=12w-mEa2ezbpaJiuTgI3PUME84ofYCdi7" class="img-responsive">
+        <img src="https://drive.google.com/uc?id=12gHoM0EuOpDJJQNDca_de_VC-4uj4v8S" class="card img-responsive">
+        <img src="https://drive.google.com/uc?id=13MY6WG61Aq19guWbuWRgFp0Xx_Dnv7dU" class="img-responsive">
+        <img src="https://drive.google.com/uc?id=1Wezb8VYhBV2a0r7UMhC_n4C0BtTOeOFL" class="img-responsive">
+        <img src="https://drive.google.com/uc?id=13MhpXYTBb6jfs43wjmW5NmXd-i64gm94" class="img-responsive">
+        <img src="https://drive.google.com/uc?id=127dTzfHUGoyTlIyaCQWmC3f20oRoIVDO" class="img-responsive">
+        <img src="https://drive.google.com/uc?id=12fnLculyKiukCSOJ0PwXToe2fL_8IqTS" class="img-responsive rotate">
+        <img src="https://drive.google.com/uc?id=13AC5vVUvdDR-7iIQWunJOp-O5tqDwH92" class="img-responsive">
+        <img src="https://drive.google.com/uc?id=12eQl9ZdvIw9GkZA0RP5vrQPi2ks9U4o9" class="img-responsive">
+        <img src="https://drive.google.com/uc?id=12mWlWHMqarh0sF5dxqcWurFHZ1eTpqk9" class="img-responsive">
+        <img src="https://drive.google.com/uc?id=12fTbpFpniSPCb3fVDq2784CH6vXsDHnc" class="img-responsive">
+        <img src="https://drive.google.com/uc?id=126eaki-1oV9ugA9uDTb48HMm8S-pSylx" class="img-responsive">
+        <img src="https://drive.google.com/uc?id=12m4BzL9lvs6HSwGBNxc8vlqdYlAGsxaJ" class="img-responsive">
+        <img src="https://drive.google.com/uc?id=16-9N6W6cxCpGQ53cZo69JeaRdbw_DrFb" class="img-responsive">
+        <img src="https://drive.google.com/uc?id=1gxL3dgAZFvVB4qSZV0tDtgGs2OCCTBb2" class="img-responsive">
+        <img src="https://drive.google.com/uc?id=13FB-j1P-jP7m_EBHYHx6iq3p-nd_JLVY" class="img-responsive">
+
+        <!-- <img src="https://drive.google.com/uc?id=" class="img-responsive"> -->
+
+        <video class="vid" controls>
+            <source src="https://drive.google.com/uc?id=10BQ5prVrxvY8iPeLFDQeuXVzvVIhEUhG" type="video/mp4">
+            </source>
+        </video>
+
+        <video class="vid" controls>
+            <source src="https://drive.google.com/uc?id=1-1qKfIjBvbQYfLdsn3wDxyiGre-Lg2Dg" type="video/mp4">
+            </source>
+        </video>
+
+        <video class="vid" controls>
+            <source src="https://drive.google.com/uc?id=1kh3w6MmzR3PWddKDLhUZ84tE75-8ofgb" type="video/mp4">
+            </source>
+        </video>
+    </div>
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <hr class="bg-dark">
+        <div class="text-center text-light pt-4">
+            <p class="h4">Designed by <code>&lt;Avin&gt;</code></p>
+        </div>
+        <hr class="bg-dark">
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+</html>
+
+<!-- https://codepen.io/maulikdarji/pen/WwqdMO -->

@@ -1,0 +1,27 @@
+body {
+  /* background-color: black; */
+  color: aliceblue;
+  text-align: center;
+  /* margin: 50px; */
+  font-size: 20px;
+  /* font-style: oblique; */
+  font-family: "Courier New", Courier, monospace;
+}
+.form{
+  margin: 50px;
+}
+#colec {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 690px) {
+  body {
+    margin-top: 155px;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  body {
+    margin: 210px;
+  }
+}
