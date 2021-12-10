@@ -10,30 +10,6 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css" type="text/css">
-
-    <script>
-        var namecom = localStorage.getItem("Username");
-
-        function validation() {
-            if (namecom === 'dogie_sm') {
-                document.getElementById("showname").innerHTML = "Hey Dogie ,😜";
-                localStorage.removeItem("Username");
-            }
-            else if (namecom === 'Legend_u_js') {
-                document.getElementById("showname").innerHTML = "Vanakam Legend uu 😂";
-                localStorage.removeItem("Username");
-            }
-            else if (namecom === 'avinn') {
-                document.getElementById("showname").innerHTML = "Hey Avin😉 Welcome Buddy!!!!";
-                localStorage.removeItem("Username");
-            }
-            else {
-                // window.location.replace("https://www.giantfreakinrobot.com/wp-content/uploads/2021/05/tony-stark-robert-downey-jr-1200x675.jpg");
-                window.location.replace("./man.jpg");
-            }
-        }
-
-    </script>
 </head>
 
 <body class="bg-dark text-light" onload="validation();">
@@ -102,6 +78,30 @@
         <hr class="bg-dark">
     </footer>
 </body>
+
+    <script>
+        var namecom = localStorage.getItem("Username");
+
+        function validation() {
+            if (namecom === 'dogie_sm') {
+                document.getElementById("showname").innerHTML = "Hey Dogie ,😜";
+                localStorage.removeItem("Username");
+            }
+            else if (namecom === 'Legend_u_js') {
+                document.getElementById("showname").innerHTML = "Vanakam Legend uu 😂";
+                localStorage.removeItem("Username");
+            }
+            else if (namecom === 'avinn') {
+                document.getElementById("showname").innerHTML = "Hey Avin😉 Welcome Buddy!!!!";
+                localStorage.removeItem("Username");
+            }
+            else {
+                // window.location.replace("https://www.giantfreakinrobot.com/wp-content/uploads/2021/05/tony-stark-robert-downey-jr-1200x675.jpg");
+                window.location.replace("./empty.html");
+            }
+        }
+
+    </script>
 
 <script src="./jquery-3.6.0.min.js"></script>
 
