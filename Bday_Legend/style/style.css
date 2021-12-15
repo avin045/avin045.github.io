@@ -8,8 +8,8 @@ body {
 }
 
 .container {
-  height: 80vh;
-  width: 100vh;
+  height: 91vh;
+  width: 95vh;
   margin: 0 auto;
   text-align: center;
   visibility: hidden;
@@ -259,7 +259,8 @@ body {
 
 @media screen and (max-width: 500px) {
   .container {
-    width: 80%;
+    width: 90%;
+    /* height: 10%; */
   }
 
   .four .text-box {
